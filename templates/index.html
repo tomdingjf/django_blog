@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+</head>
+<body>
+
+<header class="p-3 text-bg-light border-bottom mb-2">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"><a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="{% static 'img/logo.jpg' %}" alt="" height="50" width="50">
+        </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 text-secondary">首页</a></li>
+                <li><a href="#" class="nav-link px-2 text-black">发布博客</a></li>
+            </ul>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search"><input type="search" class="form-control form-control-dark text-bg-light" placeholder="搜索..." aria-label="Search"></form>
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-primary me-2">登录</button>
+                <button type="button" class="btn btn-primary">注册</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container bg-white p-3 rounded">
+    <h1>博客列表</h1>
+    <div class="row row-cols-2 row-gap-4">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <a href="#" >
+                        博客标题
+                    </a>
+                </div>
+                <div class="card-body" style="height: 100px">
+
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                </div>
+                <div class="card-footer text-body-secondary d-flex justify-content-sm-between">
+                    <div>
+                        <img src="{% static 'img/logo.jpg' %}" alt="..." width="30" height="30" class="rounded-circle">
+                        <span>用户名</span>
+                    </div>
+
+                    <div>
+                        <span>发布时间：2025年11月11日 11:25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+
+</body>
+</html>
