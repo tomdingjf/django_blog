@@ -9,5 +9,7 @@ from . import views
 app_name = 'blog'
 
 urlpatterns = [
-    path('', views.index,name='index'),
+    path('', views.index, name='index'),
+    # http://127.0.0.1:8000/blog/1
+    path('blog/<blog_id>', views.blog, name='blog'),
 ]

@@ -8,3 +8,6 @@ from django.http import HttpResponse
 def index(request):
     return render(request, 'index.html')
     # return HttpResponse('hello world')
+
+def blog(request, blog_id):
+    return render(request, 'blog_detail.html', {'blog_id': blog_id})
